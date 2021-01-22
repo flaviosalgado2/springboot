@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+
+<title>Têmis 1.0</title>
+
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet"
+	href="/materialize/css/materialize.min.css" media="screen,projection" />
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style type="text/css">
+form input[type=submit] {
+	color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+	<h1>Tela de Login</h1>
+
+	<form th:action="@{/login}" method="post" class="col s12">
+		<div class="row">
+			<div class="input-fiel col s6">
+				<label>Login:</label> <input type="text" name="username"
+					class="validate" />
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="input-fiel col s6">
+				<label>Senha:</label> <input type="password" name="password"
+					class="validate" />
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="input-fiel col s6">
+				<label>Senha:</label> <input name="logar"
+					class="waves-effect waves-light btn" type="submit" value="Logar" />
+			</div>
+		</div>
+	</form>
+
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+
+</body>
+
+</html>
